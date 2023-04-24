@@ -42,6 +42,7 @@ const displayHelp = () => {
 	console.log("The usages - \n");
 	console.log("To initialise a story number as commit prefix : cws -i <story_number>\n");
 	console.log("To commit using cws : cws -m <commit_message_without_story_number>");
+	console.log("To view the currently initialised story number : cws -v")
 	console.log("\nIt is recommended to put the cws alias to gcm (git commit) so that it seems natural.");
 }
 
@@ -50,7 +51,9 @@ const handleInputFlag = () => {
 		initialisePrefixValue();
 	} else if(process.argv.includes("-m")) {
 		commitWithPrefix();
-	} else {
+	} else if(process.argv.includes("-v")) {
+		console.log(getPrefixMessage());
+	}else {
 		displayHelp();
 	}
 }
