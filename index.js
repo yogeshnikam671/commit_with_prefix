@@ -1,3 +1,4 @@
+#!/usr/bin/env /usr/local/bin/node
 const fs = require("fs");
 
 const exec = require("child_process").exec;
