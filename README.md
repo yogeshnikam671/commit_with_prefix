@@ -26,6 +26,13 @@ There are four flags - `-i`, `-v`, `-m`
 
 `cwsn -h` : This will show how this tool can be used.
 
+### Common problem
+If the command does not work due to the error `node not found`, follow the below steps:
+1. Run the command `which node` to find the current node executable path in your machine.
+2. Then run the command `cp <current_path> /usr/local/bin/node`
+
+This will resolve the problem being faced.
+
 ### Considerations :
 The prefix message has to be initialised again on machine startup as it will be lost when the machine is shut down.
 
