@@ -1,6 +1,6 @@
 {
   "name": "cwsn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "commit with story number",
   "main": "index.js",
   "bin": "index.js",
